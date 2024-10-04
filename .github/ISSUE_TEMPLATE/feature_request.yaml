@@ -1,0 +1,42 @@
+name: Feature request
+description: 新機能や機能改善の提案.
+body:
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: 開発者ガイドラインなどに同意しているか確認する．
+      options:
+        - label: I've read the [README](https://github.com/Doilab/minitan-ros2/blob/main/README.md).
+          required: true
+
+  - type: textarea
+    attributes:
+      label: 概要
+      description: 新機能・改善に関する簡単な説明を記述してください.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 目的
+      description: 目的を記述して下さい.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: タスクリスト
+      description: 機能実装に必要なタスクリストを記述して下さい．
+      placeholder: |
+        - [ ] タスク1
+        - [ ] タスク2
+        - [ ] タスク3
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: その他
+      description: その他書いておきたいことがあれば記述してください．
+    validations:
+      required: false
